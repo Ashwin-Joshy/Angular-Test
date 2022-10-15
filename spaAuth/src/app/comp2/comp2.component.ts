@@ -38,10 +38,11 @@ export class Comp2Component implements OnInit {
   // }
   signup() {
     this.http
-      .post<any>('http://localhost:3000/user', this.signupForm.value)
+      .post<any>('http://localhost:3000/users', this.signupForm.value)
       .subscribe((res: any) => {
         console.log(res);
-        this.routes.navigate(['/comp2']);
+        alert('signup success');
+        // this.routes.navigate(['/comp2']);
       });
   }
   signIn() {
