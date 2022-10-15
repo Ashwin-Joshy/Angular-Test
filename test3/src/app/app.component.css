@@ -1,0 +1,15 @@
+*{
+    font-family: cursive;
+}
+#flex{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url(..//assets/Images/pexels-pixabay-36717.jpg);
+    background-size: cover;
+    color: white;
+
+}

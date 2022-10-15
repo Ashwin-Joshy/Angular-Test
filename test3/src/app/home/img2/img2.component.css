@@ -1,0 +1,28 @@
+#box1{
+    overflow: hidden    ;
+    text-align: center;
+    background-image: url(../../../assets/Images/photo2.jfif);
+    color: white;
+    filter: blur(100%);
+    background-size: contain;
+    backdrop-filter: blur(100%);
+    width: 22vw;
+    height: 40vh;
+    margin: 10px;
+    border-radius: 20%;
+    padding: 2%;
+} 
+h1{
+    color:white;
+    margin-top: 13vh;
+    font-size: 300%;
+} 
+.button{
+    font-size: large;
+    width: 7vw;
+    height: 6vh;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 10%;
+} 

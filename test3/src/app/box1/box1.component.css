@@ -1,0 +1,19 @@
+#box1{
+    overflow: hidden    ;
+    text-align: center;
+    background-color: #ff0000;
+    width: 26vw;
+    height: 50vh;
+    margin: 10px;
+    border-radius: 20%;
+    padding: 2%;
+}  
+.button{
+    font-size: large;
+    width: 7vw;
+    height: 6vh;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 10%;
+} 
