@@ -20,6 +20,18 @@
       "email": "1231",
       "password": "1231",
       "id": 1
+    },
+    {
+      "email": "ashwin",
+      "password": "ashwin",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "ashwin",
+      "password": "ashwin",
+      "id": 2
     }
   ]
 }

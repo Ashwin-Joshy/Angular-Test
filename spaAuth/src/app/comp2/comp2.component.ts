@@ -13,6 +13,10 @@ export class Comp2Component implements OnInit {
     email: new FormControl(''),
     password: new FormControl(''),
   });
+  signInForm = new FormGroup({
+    email: new FormControl(''),
+    password: new FormControl(''),
+  });
   constructor(
     private formBuilder: FormBuilder,
     private http: HttpClient,
@@ -39,5 +43,26 @@ export class Comp2Component implements OnInit {
         console.log(res);
         this.routes.navigate(['/comp2']);
       });
+  }
+  signIn() {
+    console.log('here');
+    
+    this.http.get('http://localhost:3000/users').subscribe((res: any) => {
+      console.log(res);
+      const user = res.find(
+        (user: any) =>{
+          return user.email === this.signInForm.value.email
+        }
+      )
+      alert(JSON.stringify(user));
+      this.signInForm.reset();
+      // if(res.email === this.signInForm.value.email && res.password === this.signInForm.value.password){
+      //   // this.routes.navigate(['/comp1']);
+      //   alert('login success');
+      // }
+      // else{
+      //   alert('login failed');
+      // }
+    });
   }
 }
