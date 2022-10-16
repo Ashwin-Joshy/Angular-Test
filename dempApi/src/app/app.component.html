@@ -1,4 +1,4 @@
 <input (click)="loadPosts()" type="button" value="Click">
 <div *ngFor="let xa of posts">
-  <h6>{{xa['title']}}</h6>
+  <h6>{{xa|json}}</h6>
 </div>

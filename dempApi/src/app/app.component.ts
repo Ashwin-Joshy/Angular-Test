@@ -12,7 +12,7 @@ export class AppComponent {
   posts: any[] = [];
   loadPosts() {
     this.http
-      .get<any>('https://jsonplaceholder.typicode.com/posts')
+      .get<any>('http://localhost:8080/allbooks')
       .subscribe((posts:any) => {
         this.posts=posts;
       });
