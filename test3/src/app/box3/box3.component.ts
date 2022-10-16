@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Myservice } from '../service/info-service';
 
 @Component({
   selector: 'app-box3',
@@ -11,5 +12,8 @@ export class Box3Component implements OnInit {
 
   ngOnInit(): void {
   }
-
+  clickMe(){
+    const service=new Myservice();
+    service.onclick('Box3');
+  }
 }

@@ -14,6 +14,6 @@ export class Box1Component implements OnInit {
   }
   clickMe(){
     const service=new Myservice();
-    service.onclick('wow');
+    service.onclick('Box1');
   }
 }
